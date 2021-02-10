@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZCd-sp-3eR">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--통계-->
+        <scene sceneID="7WB-hG-gQd">
+            <objects>
+                <viewController id="ZCd-sp-3eR" customClass="SecondItem" customModule="libraryManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kS1-cs-3l9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wb-gm-Kis">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="통계" id="yoN-yN-9wz"/>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-Wx-9ds">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-mc-YQR" userLabel="contentView">
+                                        <rect key="frame" x="8" y="0.0" width="375" height="574"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금까지 총   권 읽었습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3W-lV-bq0">
+                                                <rect key="frame" x="106" y="23" width="208" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WCr-1j-irA" userLabel="ProgressStack">
+                                                <rect key="frame" x="10" y="60" width="355" height="170"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4d4-b6-qSt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173.5" height="170"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="한달 목표달성 비율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kj-B9-9BS">
+                                                                <rect key="frame" x="28" y="8" width="126.5" height="20.5"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4RO-el-C4t" customClass="CircularProgressView" customModule="libraryManagement" customModuleProvider="target">
+                                                                <rect key="frame" x="31" y="46" width="110" height="110"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-PX-YJ3">
+                                                                        <rect key="frame" x="33" y="45" width="69" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phU-Hn-UrT">
+                                                        <rect key="frame" x="181.5" y="0.0" width="173.5" height="170"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="연간 목표달성 비율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ru-of-TNw">
+                                                                <rect key="frame" x="28" y="8" width="127" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1op-9a-xUZ" customClass="CircularProgressView" customModule="libraryManagement" customModuleProvider="target">
+                                                                <rect key="frame" x="31" y="47" width="110" height="110"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPO-dj-a2P">
+                                                                        <rect key="frame" x="38" y="45" width="64" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <viewLayoutGuide key="safeArea" id="jQW-AC-8Hi"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="170" id="9nU-nv-iZ6"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qk1-mY-kqE">
+                                                <rect key="frame" x="10" y="260" width="355" height="398"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-b9-Ghc" userLabel="monthStack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="191.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월별 기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pT-SC-dke">
+                                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="25.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lJ-4h-oTC" userLabel="month Bar Chart" customClass="BarChartView" customModule="Charts">
+                                                                <rect key="frame" x="0.0" y="41.5" width="355" height="150"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="D3y-sa-y1a"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="3lJ-4h-oTC" firstAttribute="leading" secondItem="Nym-b9-Ghc" secondAttribute="leading" id="Dsi-fk-AUW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3lJ-4h-oTC" secondAttribute="trailing" id="gkB-Hf-59i"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3lJ-4h-oTC" secondAttribute="trailing" id="kxd-zl-1pi"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="B1Z-W5-42C" userLabel="yearStack">
+                                                        <rect key="frame" x="0.0" y="206.5" width="355" height="191.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연간 기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptO-vg-ZyT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="25.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-Fy-2N8" userLabel="month Bar Chart" customClass="BarChartView" customModule="Charts">
+                                                                <rect key="frame" x="0.0" y="41.5" width="355" height="150"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="Ftx-yp-Z1R"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="mVN-Fy-2N8" firstAttribute="leading" secondItem="B1Z-W5-42C" secondAttribute="leading" id="MdM-bK-HIg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mVN-Fy-2N8" secondAttribute="trailing" id="pyZ-bX-mZ3"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="WCr-1j-irA" firstAttribute="centerX" secondItem="q3W-lV-bq0" secondAttribute="centerX" constant="-22.5" id="6Al-Fy-rar"/>
+                                            <constraint firstAttribute="trailing" secondItem="WCr-1j-irA" secondAttribute="trailing" constant="10" id="705-iI-eQw"/>
+                                            <constraint firstItem="q3W-lV-bq0" firstAttribute="top" secondItem="TgR-mc-YQR" secondAttribute="top" constant="23" id="DHb-0v-Djj"/>
+                                            <constraint firstItem="qk1-mY-kqE" firstAttribute="top" secondItem="WCr-1j-irA" secondAttribute="bottom" constant="30" id="FLA-q5-2eU"/>
+                                            <constraint firstItem="WCr-1j-irA" firstAttribute="leading" secondItem="TgR-mc-YQR" secondAttribute="leading" constant="10" id="G5a-AV-9QT"/>
+                                            <constraint firstItem="qk1-mY-kqE" firstAttribute="leading" secondItem="TgR-mc-YQR" secondAttribute="leading" constant="10" id="HnY-k5-V3B"/>
+                                            <constraint firstAttribute="trailing" secondItem="qk1-mY-kqE" secondAttribute="trailing" constant="10" id="UAQ-3e-BAi"/>
+                                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="q3W-lV-bq0" secondAttribute="trailing" constant="106" id="gCS-74-Wgu"/>
+                                            <constraint firstItem="q3W-lV-bq0" firstAttribute="leading" secondItem="TgR-mc-YQR" secondAttribute="leading" constant="106" id="nPR-6C-Bxp"/>
+                                            <constraint firstItem="WCr-1j-irA" firstAttribute="top" secondItem="q3W-lV-bq0" secondAttribute="bottom" constant="16.5" id="rrG-9l-ScE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TgR-mc-YQR" secondAttribute="bottom" id="0wr-Wk-lwn"/>
+                                    <constraint firstItem="TgR-mc-YQR" firstAttribute="width" secondItem="5DE-Wx-9ds" secondAttribute="width" id="4vJ-gH-TWY"/>
+                                    <constraint firstItem="TgR-mc-YQR" firstAttribute="leading" secondItem="5DE-Wx-9ds" secondAttribute="leading" id="PhU-j8-DLH"/>
+                                    <constraint firstAttribute="trailing" secondItem="TgR-mc-YQR" secondAttribute="trailing" id="SQI-Xn-iUr"/>
+                                    <constraint firstItem="TgR-mc-YQR" firstAttribute="height" secondItem="5DE-Wx-9ds" secondAttribute="height" id="rhq-j8-SDy"/>
+                                    <constraint firstItem="TgR-mc-YQR" firstAttribute="top" secondItem="5DE-Wx-9ds" secondAttribute="top" id="uN3-y0-QDf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5DE-Wx-9ds" firstAttribute="top" secondItem="8wb-gm-Kis" secondAttribute="bottom" id="2lK-p1-XTm"/>
+                            <constraint firstItem="5DE-Wx-9ds" firstAttribute="trailing" secondItem="Cjb-QC-kTk" secondAttribute="trailing" id="4fu-WD-OSc"/>
+                            <constraint firstItem="5DE-Wx-9ds" firstAttribute="bottom" secondItem="Cjb-QC-kTk" secondAttribute="bottom" id="CyD-VV-4Ku"/>
+                            <constraint firstItem="8wb-gm-Kis" firstAttribute="trailing" secondItem="Cjb-QC-kTk" secondAttribute="trailing" id="Jn1-22-iap"/>
+                            <constraint firstItem="5DE-Wx-9ds" firstAttribute="leading" secondItem="Cjb-QC-kTk" secondAttribute="leading" id="RG0-ue-UIG"/>
+                            <constraint firstItem="8wb-gm-Kis" firstAttribute="top" secondItem="Cjb-QC-kTk" secondAttribute="top" id="f3D-Xf-l5J"/>
+                            <constraint firstItem="8wb-gm-Kis" firstAttribute="leading" secondItem="Cjb-QC-kTk" secondAttribute="leading" id="vs6-RE-uCq"/>
+                            <constraint firstItem="5DE-Wx-9ds" firstAttribute="top" secondItem="8wb-gm-Kis" secondAttribute="bottom" id="x62-rB-TOE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cjb-QC-kTk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="통계" image="chart.bar" catalog="system" id="hHi-TG-HAD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="monthBarChart" destination="3lJ-4h-oTC" id="LQu-gL-tCi"/>
+                        <outlet property="monthChartLabel" destination="7pT-SC-dke" id="3FZ-t7-sAd"/>
+                        <outlet property="monthContainer" destination="4d4-b6-qSt" id="bfx-Yn-zlk"/>
+                        <outlet property="monthProgress" destination="4RO-el-C4t" id="AFx-G0-xub"/>
+                        <outlet property="monthRatio" destination="8mx-PX-YJ3" id="DDV-3I-0iM"/>
+                        <outlet property="scrollView" destination="5DE-Wx-9ds" id="XNW-oJ-8O6"/>
+                        <outlet property="titleLabel" destination="q3W-lV-bq0" id="NAb-YR-LfB"/>
+                        <outlet property="yearBarChart" destination="mVN-Fy-2N8" id="f7H-g7-mkl"/>
+                        <outlet property="yearChartLabel" destination="ptO-vg-ZyT" id="9jd-6F-xKQ"/>
+                        <outlet property="yearContainer" destination="phU-Hn-UrT" id="tiU-gU-knm"/>
+                        <outlet property="yearProgress" destination="1op-9a-xUZ" id="VP9-Gf-Gf8"/>
+                        <outlet property="yearRatio" destination="QPO-dj-a2P" id="HmU-xA-nSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Os9-LE-KMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2821.5999999999999" y="471.8140929535233"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+    </resources>
+</document>
